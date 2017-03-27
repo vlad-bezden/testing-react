@@ -10,19 +10,19 @@ test('renders with text', () => {
   const button = renderer.getRenderOutput()
 
   expect(button.type).toBe('button')
-	expect(button.props.children).toBe(text)
+  expect(button.props.children).toBe(text)
 })
 
 test('fires the onClick callback', () => {
   const onClick = jest.fn()
 
-  const tree = TestUtils.renderIntoDocument (
-    <Button onClick={onClick} />
+  const tree = TestUtils.renderIntoDocument(
+    <Button onClick={onClick} />,
   )
 
-  const button = TestUtils.findRenderedDOMComponentWithTag (
+  const button = TestUtils.findRenderedDOMComponentWithTag(
     tree,
-    'button'
+    'button',
   )
 
   TestUtils.Simulate.click(button)
