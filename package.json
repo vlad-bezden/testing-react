@@ -2,9 +2,9 @@
   "name": "testing-with-jest",
   "version": "1.0.0",
   "description": "React testing with Jest",
-  "main": "\"\"",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint ./"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,14 @@
   },
   "homepage": "https://github.com/vlad-bezden/testing-with-jest#readme",
   "devDependencies": {
-    "jest": "^19.0.2"
+    "babel-jest": "^19.0.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "jest": "^19.0.2",
+    "react-addons-test-utils": "^15.4.2"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   }
 }
