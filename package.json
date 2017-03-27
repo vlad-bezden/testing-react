@@ -1,0 +1,27 @@
+{
+  "name": "testing-with-jest",
+  "version": "1.0.0",
+  "description": "React testing with Jest",
+  "main": "\"\"",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlad-bezden/testing-with-jest.git"
+  },
+  "keywords": [
+    "jest",
+    "eslint",
+    "configuration"
+  ],
+  "author": "Vlad Bezden",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vlad-bezden/testing-with-jest/issues"
+  },
+  "homepage": "https://github.com/vlad-bezden/testing-with-jest#readme",
+  "devDependencies": {
+    "jest": "^19.0.2"
+  }
+}
