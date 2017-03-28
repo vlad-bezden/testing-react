@@ -1,8 +1,8 @@
 import React from 'react'
 import TestUtils from 'react-addons-test-utils'
-import Button from './StatelessFunctionComponent'
-import Wrapper from './Wrapper'
-import utils from './utils'
+import Button from '../components/StatelessFunctionComponent'
+import Wrapper from '../components/Wrapper'
+import utils from '../utils'
 
 test('renders with text', () => {
   const text = 'text'

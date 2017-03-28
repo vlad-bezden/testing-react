@@ -1,7 +1,7 @@
 import React from 'react'
 import TestUtils from 'react-addons-test-utils'
-import Button from './Button'
-import utils from './utils'
+import Button from '../components/Button'
+import utils from '../utils'
 
 test('renders with text', () => {
   const text = 'text'
@@ -11,7 +11,7 @@ test('renders with text', () => {
   const button = renderer.getRenderOutput()
 
   expect(button.type).toBe('button')
-  expect(button.props.children).toBe(text);
+  expect(button.props.children).toBe(text)
 })
 
 test('fires the onClick callback', () => {

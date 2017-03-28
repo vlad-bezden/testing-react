@@ -4,7 +4,7 @@
   "description": "React testing with Jest",
   "scripts": {
     "test": "jest",
-    "lint": "eslint ./"
+    "lint": "eslint ./src/**/*.js ./src/**/*.jsx"
   },
   "repository": {
     "type": "git",
