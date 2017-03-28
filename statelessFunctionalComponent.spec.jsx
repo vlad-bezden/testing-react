@@ -1,12 +1,14 @@
 import React from 'react'
 import TestUtils from 'react-addons-test-utils'
-import Button from './button'
+import Button from './StatelessFunctionComponent'
+import Wrapper from './Wrapper'
+import utils from './utils'
 
 test('renders with text', () => {
   const text = 'text'
 
   const renderer = TestUtils.createRenderer()
-  renderer.render(<Button text={text} onClick={() => { }} />)
+  renderer.render(<Button text={text} onClick={utils.nil} />)
   const button = renderer.getRenderOutput()
 
   expect(button.type).toBe('button')
@@ -23,25 +25,15 @@ test('fires the onClick callback', () => {
   const tree = TestUtils.renderIntoDocument(
     <Wrapper>
       <Button text={text} onClick={onClick} />
-    </Wrapper>,
+    </Wrapper>
   )
 
   const button = TestUtils.findRenderedDOMComponentWithTag(
     tree,
-    'button',
+    'button'
   )
 
   TestUtils.Simulate.click(button)
 
   expect(onClick).toBeCalled()
 })
-
-class Wrapper extends React.Component {
-  render() {
-    return <div>{this.props.children}</div>
-  }
-}
-
-Wrapper.propTypes = {
-  children: React.PropTypes.node.isRequired,
-}
