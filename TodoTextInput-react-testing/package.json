@@ -1,0 +1,42 @@
+{
+  "name": "todotextinput-react-testing",
+  "version": "1.0.0",
+  "description": "Testing Facebook's real-world TodoTextInput component from the Redux TodoMVC example",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "jest": {
+    "collectCoverage": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlad-bezden/TodoTextInput-react-testing.git"
+  },
+  "keywords": [
+    "react",
+    "testing",
+    "jest",
+    "component",
+    "enzyme"
+  ],
+  "author": "Vlad Bezden",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vlad-bezden/TodoTextInput-react-testing/issues"
+  },
+  "homepage": "https://github.com/vlad-bezden/TodoTextInput-react-testing#readme",
+  "devDependencies": {
+    "babel-jest": "^19.0.0",
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "enzyme": "^2.8.0",
+    "jest": "^19.0.2",
+    "react-addons-test-utils": "^15.4.2",
+    "react-test-renderer": "^15.4.2"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
