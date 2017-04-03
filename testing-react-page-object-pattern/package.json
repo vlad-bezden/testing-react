@@ -1,0 +1,42 @@
+{
+  "name": "testing-react-page-object-pattern",
+  "version": "1.0.0",
+  "description": "Example on how to test React tests when the tree of components becomes more complex and there are multiple nested children. The Page Object pattern",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-jest": "^19.0.0",
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "enzyme": "^2.8.0",
+    "jest": "^19.0.2",
+    "react-addons-test-utils": "^15.4.2"
+  },
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "jest": {
+    "collectCoverage": false
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlad-bezden/testing-react/testing-react-page-object-pattern.git"
+  },
+  "keywords": [
+    "jest",
+    "testing",
+    "enzyme",
+    "hoc",
+    "pattern",
+    "react"
+  ],
+  "author": "Vlad Bezden",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vlad-bezden/testing-react/testing-react-page-object-pattern/issues"
+  },
+  "homepage": "https://github.com/vlad-bezden/testing-react/testing-react-page-object-pattern#readme"
+}
