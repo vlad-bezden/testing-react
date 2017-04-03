@@ -6,7 +6,7 @@ class Page {
 
   fill(name, value) {
     const field = this.wrapper.find(`[name="${name}"]`)
-    field.simulate('change', { target: { name: value } })
+    field.simulate('change', { target: { name, value } })
   }
 
   submit() {
